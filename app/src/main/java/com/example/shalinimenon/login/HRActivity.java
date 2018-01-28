@@ -37,7 +37,7 @@ public class HRActivity extends AppCompatActivity implements View.OnClickListene
     public void onClick(View v) {
         String value = hr.getText().toString();
         final int rate = Integer.parseInt(value);
-        System.out.println("heart rate = " + rate);
+        Log.d("YouAreSafe", "Rate : " + rate);
 
         if (rate > 90) {
             makePhoneCall(HRActivity.this, PHONE_NUMBER);
